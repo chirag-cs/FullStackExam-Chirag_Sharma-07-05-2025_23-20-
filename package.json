@@ -7,7 +7,7 @@
     "test": "jest",
     "dev": "nodemon src/server.ts",
     "build": "cd frontend && npm install && npm run build && cd ../src && npm install",
-    "start": "ts-node src/server.ts"
+    "start": "cd src && npm start"
   },
   "keywords": [],
   "author": "",
