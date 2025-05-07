@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon src/server.ts",
-    "build": "cd frontend && npm install && npm run build && cd ../src && npm install",
-    "start": "npm run dev"
+    "postinstall": "cd frontend && npm install && cd ../",
+    "build": "cd frontend && npm run build",
+    "start": "ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
