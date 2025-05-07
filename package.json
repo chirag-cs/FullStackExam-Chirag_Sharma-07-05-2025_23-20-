@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon src/server.ts",
-    "build": "NODE_OPTIONS='--max-old-space-size=1024' cd frontend && npm install && npm run build && cd ../src && npm install",
-    "start": "cd src && npm start"
+    "build": "cd frontend && npm install && npm run build && cd ../src && npm install",
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
